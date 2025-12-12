@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> PORTFOLIO | Brandi Hoxworth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div class="page-frame">
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+
+      <div class="header-right">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="siteNav">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+
+          <div class="nav-work">
+            <button class="nav-work-label" type="button" id="workToggle" aria-expanded="false">
+              WORK <span class="caret">▾</span>
+            </button>
+
+            <div class="nav-work-menu" id="workMenu">
+              <a href="sephora.html">Sephora PDP Redesign</a>
+              <a href="flixbus.html">FlixBus Seat Selection</a>
+              <a href="ucp.html">UCP Website Redesign</a>
+            </div>
+          </div>
+        </nav>
+
+        <a class="btn-contact" href="resume.html">RESUME</a>
+      </div>
+    </header>
+
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-images">
+          <img class="hero-img-left" src="images/wow.png" alt="flower squiggle">
+          <img class="hero-img-right" src="images/wow.png" alt="flower squiggle">
+        </div>
+        <h2 class="hero-small"> Hey, I'm a</h2>
+        <h1 class="hero-title">DIGITAL<br>DESIGNER</h1>
+
+        <div class="hero-links">
+          <a class="hero-link left" href="#projects">
+            <span class="dot"></span>
+            <span class="text">My Work</span>
+          </a>
+          <a class="hero-link right" href="#contact">
+            <span class="text">Let's Talk</span>
+            <span class="dot"></span>
+          </a>
+        </div>
+        
+       <div class="full-width-divider">
+          <img src="images/flower.png" alt="Section divider">
+        </div>
+      <section id="projects" class="selected-work">
+        <div class="selected-heading">
+          <h2>SELECTED<br>WORK</h2>
+          <div class="selected-divider"></div>
+        </div>
+
+          <div class="projects-row">
+
+            <div class="feature-project">
+              <div class="feature-info">
+                <div class="feature-index">1</div>
+                <h3 class="feature-title">Sephora PDP Redesign UX/UI</h3>
+                <p class="feature-meta">Figma project where I conducted competitive analysis on other sites PDP's, conducted user testing, and designed a new PDP for the Sephora App.</p>
+              </div>
+              <div class="feature-image">
+                <a href="sephora.html" class="work-card">
+                  <img src="images/sephoraimg.png" alt="Sephora PDP redesign mockup">
+                </a>
+              </div>
+            </div>
+
+            <div class="feature-project">
+              <div class="feature-info">
+                <div class="feature-index">2</div>
+                <h3 class="feature-title">UCP Non-Profit Site Redesign </h3>
+                <p class="feature-meta">Squarespace group project where we worked with a non-profit org in San Diego and redesigned their website to be more intuitive and community-centered.</p>
+              </div>
+              <div class="feature-image">
+                <a href="ucp.html" class="work-card">
+                  <img src="images/ucp.png" alt="Sephora PDP redesign mockup">
+                </a>
+              </div>
+            </div>
+
+            <div class="feature-project">
+              <div class="feature-info">
+                <div class="feature-index">3</div>
+                <h3 class="feature-title">FlixBus Seat Selection Improvement</h3>
+                <p class="feature-meta">Figma project where I redesigned Flixbus' seat selection page to be more scannable, intuitive, and transparent for users during checkout. </p>
+              </div>
+              <div class="feature-image">
+                <a href="flixbus.html" class="work-card">
+                  <img src="images/flix.png" alt="Sephora PDP redesign mockup">
+                </a>
+              </div>
+            </div>
+        </section>
+      <section id="contact" class="contact-section">
+
+        <div class="contact-image">
+          <img src="images/me.png" alt="Decorative image">
+        </div>
+
+        <div class="contact-info">
+          <h2 class="contact-title">Let’s Connect</h2>
+          <p class="contact-description">
+            I love working with people. If you want to collaborate or have any design opportunities, let's talk.
+          </p>
+
+          <div class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:email@gmail.com">email@gmail.com</a></p>
+            <p><strong>Phone:</strong> (123) 456-7891</p>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/jobs?mcid=6994434350142418944&src=go-pa&trk=sem-ga_campid.18853522261_asid.146084015209_crid.732549151385_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9031346&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=18853522261&gbraid=0AAAAABIeiSqO0g2b0CSn5nba6Bfo41uMG&gclid=CjwKCAiA0eTJBhBaEiwA-Pa-hfEvK5y4iqMbzo2e8sstuAd7I9HBN3DrbRhgjmou6_i1-B_yCYonoBoCAy4QAvD_BwE" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2025 Brandi Hoxworth</span>
+      <span>Based in San Diego, CA</span>
+    </footer>
+  </div>
+  <script src="dropdown.js"></script>
+</body>
+</html>

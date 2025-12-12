@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sephora PDP Redesign | Case Study</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Re-use your existing header exactly as on the other pages -->
+  <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="sephora.html">WORK</a>
+        <a href="resume.html">RESUME</a>
+      </nav>
+      <a class="btn-contact" href="#contact">CONTACT ME</a>
+    </header>
+      
+      
+    </nav>
+
+    <a class="btn-contact" href="#contact">CONTACT ME</a>
+  </header>
+
+  <main class="project-page">
+
+    <!-- HERO -->
+    <section class="project-hero">
+      <div class="project-hero-text">
+        <p class="project-tag">UX · Product Design · Mobile</p>
+        <h1 class="project-title">Sephora Product Page Redesign</h1>
+        <p class="project-subtitle">
+          Reimagining Sephora’s product details page (PDP) to feel less like
+          a cluttered website on a phone—and more like a calm, confidence-building
+          shopping experience.
+        </p>
+
+        <div class="project-meta">
+          <div>
+            <h3>Role</h3>
+            <p>UX Designer · Researcher</p>
+          </div>
+          <div>
+            <h3>Team</h3>
+            <p>3 designers · COGS 187A</p>
+          </div>
+          <div>
+            <h3>Timeline</h3>
+            <p>4 weeks · 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-hero-image">
+        <img src="sephora-hero.png" alt="Mockup of redesigned Sephora PDP">
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="project-section">
+      <h2>Overview</h2>
+      <p>
+        We redesigned the Sephora iOS product details page to keep its premium
+        brand feel while fixing usability issues that made shopping stressful:
+        tiny text, cluttered layout, and confusing delivery and size options.
+      </p>
+      <p>
+        Through two rounds of user testing (8 participants total), we focused on
+        helping shoppers quickly understand if a product fits their skin needs,
+        compare options with less effort, and feel confident adding items to their bag.
+      </p>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="project-section project-two-column">
+      <div>
+        <h2>The Problem</h2>
+        <ul>
+          <li>
+            <strong>Cluttered, overwhelming layout</strong> – users described the
+            PDP as “too much stuff on the screen” and “like a website slapped onto a phone.”
+          </li>
+          <li>
+            <strong>Hard to compare products</strong> – shoppers had to switch
+            between multiple tabs and re-read long descriptions just to compare moisturizers.
+          </li>
+          <li>
+            <strong>Confusing fulfillment options</strong> – pickup & delivery
+            choices were wordy and stacked, making it hard to see what was actually selected.
+          </li>
+          <li>
+            <strong>Poor information hierarchy</strong> – important details like
+            skin type suitability, ingredients, and “clean” badges were buried in dense text.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-callout">
+        <h3>Design Goal</h3>
+        <p>
+          Make the PDP feel clear and supportive for all types of shoppers—
+          from casual gift-givers to skincare nerds—without losing Sephora’s
+          luxury aesthetic.
+        </p>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="project-section">
+      <h2>Research & Key Insights</h2>
+      <div class="project-grid">
+        <div>
+          <h3>User Testing · Round 1</h3>
+          <ul>
+            <li>4 participants with mixed experience using Sephora and beauty apps.</li>
+            <li>Tasks: find a gift, recall a perfume, compare moisturizers, check pickup.</li>
+            <li>
+              People struggled most with comparing moisturizers and understanding
+              fulfillment & size/price changes.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>What We Heard</h3>
+          <ul>
+            <li>“Too much stuff on the screen… hard to read and hard to see.”</li>
+            <li>“I didn’t find a compare feature so I had to go back and forth.”</li>
+            <li>Users relied heavily on badges & reviews but wanted clearer summaries.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Competitive Analysis</h3>
+          <ul>
+            <li>Nike & Fabletics: strong hierarchy, sticky headers, clear CTAs.</li>
+            <li>Ulta: more whitespace, bold fulfillment tiles, clearer shade + price.</li>
+            <li>
+              Takeaway: visual breathing room + consistent sections matter more
+              than adding flashy features.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN SOLUTIONS -->
+    <section class="project-section">
+      <h2>Redesign Highlights</h2>
+
+      <div class="solution-block">
+        <h3>1. Clear, Anchored Layout</h3>
+        <p>
+          We introduced a sticky top bar with product name/brand and a sticky
+          “Add to Bag” button at the bottom. No matter how far users scroll, they
+          always know what they’re looking at and how to act.
+        </p>
+      </div>
+
+      <div class="solution-block">
+        <h3>2. Full-Width Hero Image Carousel</h3>
+        <p>
+          A large, zoomable image gallery gives shoppers an immediate visual feel
+          for the product. A peek of the next image hints that they can swipe,
+          reducing reliance on tiny pagination dots.
+        </p>
+      </div>
+
+      <div class="solution-block">
+        <h3>3. Simpler Shipping & Pickup</h3>
+        <p>
+          We replaced dense text tiles with straightforward radio options like
+          “Ship to address” and “Same-day pickup,” plus a single tile that updates
+          with the current store / address. Extra details only appear after selection,
+          lowering cognitive load.
+        </p>
+      </div>
+
+      <div class="solution-block">
+        <h3>4. Light-weight Drawers for Details</h3>
+        <p>
+          Long, text-heavy sections became short dropdown drawers (e.g., Details,
+          Ingredients, How to use). Each is scannable in under ~100 words, so
+          users don’t have to wade through walls of text to understand the product.
+        </p>
+      </div>
+
+      <div class="solution-block">
+        <h3>5. Highlights & Recommendations Carousels</h3>
+        <p>
+          A concise “Highlights” row surfaces skin type, texture, and key benefits
+          at a glance, while “We think you’ll love” gently suggests similar products
+          in a horizontal carousel instead of long grids.
+        </p>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="project-section project-two-column">
+      <div>
+        <h2>Impact</h2>
+        <ul>
+          <li>
+            In Round 2 testing, users described Redesign A as “clean,” “usable,”
+            and “easy to navigate” and reached key info (skin type, ingredients,
+            pickup) more quickly.
+          </li>
+          <li>
+            The Highlights + drawers pattern became the primary way people checked
+            if the moisturizer fit Rosalie’s skin needs.
+          </li>
+          <li>
+            The sticky Add to Bag with clear “Item added successfully” state
+            reduced uncertainty around checkout actions.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>What I’d Do Next</h2>
+        <ul>
+          <li>Add a lighter, earlier comparison module using the stronger design (A).</li>
+          <li>Bring in a more prominent “clean” label directly on the hero image.</li>
+          <li>
+            Explore adaptive layouts for newer vs. expert shoppers (e.g., quick
+            summaries vs. deeper ingredient breakdowns).
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a class="footer-link" href="https://linkedin.com" target="_blank">
+        <span class="footer-icon">in</span>
+        <span class="footer-text">LinkedIn</span>
+        <span class="footer-arrow">↗</span>
+      </a>
+      <a class="footer-link" href="mailto:youremail@example.com">
+        <span class="footer-icon">✉</span>
+        <span class="footer-text">Email</span>
+        <span class="footer-arrow">↗</span>
+      </a>
+      <a class="footer-link" href="resume.html">
+        <span class="footer-icon">▢</span>
+        <span class="footer-text">Resume</span>
+        <span class="footer-arrow">↗</span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

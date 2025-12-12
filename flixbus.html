@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlixBus Seat Selection Redesign | Case Study</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="page-frame">
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+
+      <div class="header-right">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="siteNav">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+
+          <div class="nav-work">
+            <button class="nav-work-label" type="button" id="workToggle" aria-expanded="false">
+              WORK <span class="caret">▾</span>
+            </button>
+
+            <div class="nav-work-menu" id="workMenu">
+              <a href="sephora.html">Sephora PDP Redesign</a>
+              <a href="flixbus.html">FlixBus Seat Selection</a>
+              <a href="ucp.html">UCP Website Redesign</a>
+            </div>
+          </div>
+        </nav>
+
+        <a class="btn-contact" href="resume.html">RESUME</a>
+      </div>
+    </header>
+
+
+  <main class="project-page">
+
+    <section class="project-intro">
+      <div class="project-intro-left">
+        <h1 class="project-name">FlixBus Seat Selection & Trip Results</h1>
+
+        <div class="project-meta-rows">
+          <div class="project-meta-row">
+            <span class="meta-label">Role</span>
+            <span class="meta-value">UX / UI Design, User Research, Interaction Design</span>
+          </div>
+          <div class="project-meta-row">
+            <span class="meta-label">Duration</span>
+            <span class="meta-value">2 Weeks · 2025</span>
+          </div>
+          <div class="project-meta-row">
+            <span class="meta-label">Tools</span>
+            <span class="meta-value">Figma, Google Docs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-intro-right">
+        <h2 class="project-context-heading">Context</h2>
+        <p>
+          FlixBus is an intercity bus service that lets riders search routes, compare prices, and
+          book tickets online. In class, my team evaluated the current site with usability testing to
+          understand how well the booking flow supports real travelers.
+        </p>
+        <br>
+        <p>
+          Across five tasks—booking a one-way trip, comparing routes, understanding stops,
+          tracking a trip, and modifying a booking—we noticed repeated confusion around trip
+          results, stop information, and the seat selection / extras flow. The experience often felt
+          cluttered, unpredictable, and easy to misinterpret, especially when users expected an
+          airline-style seat picker. 
+        </p>
+      </div>
+
+      <div class="project-intro-divider"></div>
+
+      <div class="project-image-row">
+        <img src="images/flixtripresult.png" alt="FlixBus trip results redesign mockup">
+        <img src="images/flixseat.png" alt="FlixBus seat selection redesign mockup">
+      </div>
+    </section>
+
+    <section class="project-problem-solution">
+      <div class="ps-column">
+        <h2 class="ps-heading">The Problem</h2>
+        <p>
+          Travelers struggled to understand their routes and seats. Many users missed the seat
+          selection step entirely or couldn’t tell which seats were available, premium, or already
+          taken. Premium fees only appeared on hover, making price changes feel like a
+          surprise at checkout. At the same time, trip results showed dense lists of routes with
+          unclear “direct” labels and scattered stop details, forcing users to dig for basic
+          information like how many stops there were and where they would actually board. 
+        </p>
+      </div>
+
+      <div class="ps-column">
+        <h2 class="ps-heading">The Solution</h2>
+        <p>
+          We redesigned two key parts of the flow: the trip results / route understanding
+          component and the seat selection & extras experience. A consolidated trip card makes
+          stops, duration, and “no stops vs. number of stops” immediately visible. A dedicated
+          “Seat Selection & Extras (Optional)” step comes <em>before</em> checkout, with a clear
+          legend, high-contrast seat states, transparent pricing, and a prominent option to skip
+          extras altogether. Finally, a review page summarizes seat selection in plain language,
+          giving users one last chance to confirm or change their choice. 
+        </p>
+      </div>
+    </section>
+
+    <br><br><br>
+
+    <section class="project-design-section">
+        <div class="design-top">
+            <div class="design-left">
+                <p class="section-kicker">Design</p>
+                <h2 class="section-title">Seat Selection Flow</h2>
+            </div>
+
+            <div class="design-right">
+                <p class="section-description">
+                    These three screens show the optional seat selection experience from start → selected seat →
+                    add-on confirmation. The legend is separated from the seat map, seat states are clearer, and the
+                    “Selected Seats” summary updates immediately to reduce surprises at checkout.
+                </p>
+            </div>
+        </div>
+
+        <div class="prototype-frame">
+            <div class="flow-3up">
+                <figure class="flow-card">
+                    <img src="images/flixbusflow1.png" alt="Seat selection default state">
+                    <figcaption>
+                        <span class="flow-title">1. Choose a seat</span>
+                        <span class="flow-sub">Clear legend + visible seat states</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="flow-card">
+                    <img src="images/flixbusflow2.png" alt="Seat selected state">
+                    <figcaption>
+                        <span class="flow-title">2. Seat selected</span>
+                        <span class="flow-sub">Selection appears in the summary</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="flow-card">
+                    <img src="images/fllixbusflow3.png" alt="Optional add-on selected state">
+                    <figcaption>
+                        <span class="flow-title">3. Optional add-on</span>
+                        <span class="flow-sub">Add “No Neighbor” with pricing shown</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <section class="project-section">
+      <h2>Redesign Highlights</h2>
+      <ul>
+        <li>
+          <strong>Transparent route cards:</strong> consolidated trip information with a
+          vertical stop timeline, clear “No stops / 4 stops” labels, and more visible map
+          access so users immediately understand how their trip is structured.
+        </li>
+        <br></br>
+        <li>
+          <strong>Specific stop context:</strong> improved copy for boarding locations and
+          map pins that can be tied to landmarks, helping riders feel confident they’ve
+          picked the right station.
+        </li>
+        <br></br>
+        <li>
+          <strong>Dedicated “Seat Selection & Extras” step:</strong> seat selection and
+          add-ons are grouped into a single page before checkout, with a bold “Optional”
+          label and a prominent “Skip and continue to checkout” button.
+        </li>
+        <br></br>
+        <li>
+          <strong>High-contrast seat legend:</strong> available, premium, taken, and selected
+          seats use distinct colors and iconography, with the legend detached from the map
+          so users can actually notice and read it. :contentReference[oaicite:6]{index=6}
+        </li>
+        <br></br>
+        <li>
+          <strong>Predictable pricing:</strong> selecting a seat updates the right-hand
+          summary tile with seat type and cost—no more hidden hover tooltips or surprise
+          fees on the last screen.
+        </li>
+        <br></br>
+        <li>
+          <strong>Review page confirmation:</strong> a dedicated Seat Selection tile on the
+          review screen spells out the current state (“No seat selected yet” vs. “You’ve
+          reserved a back aisle seat”) and offers clear actions to change or cancel before
+          paying.
+        </li>
+      </ul>
+    </section>
+
+    <section class="final-takeaways">
+      <h2 class="section-title">Final Takeaways</h2>
+      <p class="final-intro">
+        This project reinforced how small pieces of ambiguity around stops, seat states,
+        or pricing—can snowball into a booking flow that feels stressful and untrustworthy.
+      </p>
+
+      <div class="takeaways-grid">
+        <div class="takeaway-card">
+          <h3>Group complex decisions into clear steps</h3>
+          <p>
+            When key actions like seat selection and add-ons are buried inside checkout,
+            users feel blindsided. Moving them to a dedicated, clearly labeled step made
+            the flow more predictable and aligned with mental models from airline sites.
+          </p>
+        </div>
+
+        <div class="takeaway-card">
+          <h3>Make “optional” truly feel optional</h3>
+          <p>
+            Explicit labels, skip buttons, and calm language go a long way in building trust.
+            Labeling seat selection and upgrades as optional reduced pressure and helped
+            riders feel in control instead of upsold. 
+          </p>
+        </div>
+
+        <div class="takeaway-card">
+          <h3>Use review screens to lower anxiety</h3>
+          <p>
+            A well-designed review page is not just a recap—it’s a reassurance step.
+            Showing seat status, route details, and next steps in plain language gave users
+            confidence that they understood exactly what they were about to purchase.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+    <footer>
+      <span>© 2025 Brandi Hoxworth</span>
+      <span>Based in San Diego, CA</span>
+    </footer>
+  <script src="dropdown.js"></script>
+</body>
+</html>
